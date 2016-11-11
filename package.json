@@ -1,0 +1,15 @@
+{
+  "name": "reactdemo",
+  "version": "1.0.0",
+  "description": "The practice demo project to learn React framework",
+  "main": "app.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "author": "Liping Huang <liping.huang@live.com>",
+  "license": "MIT"
+}
