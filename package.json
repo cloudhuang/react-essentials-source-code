@@ -11,5 +11,17 @@
     "url": "."
   },
   "author": "Liping Huang <liping.huang@live.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "react": "^0.14.0-beta3",
+    "react-dom": "^0.14.0-beta3"
+  }
 }
