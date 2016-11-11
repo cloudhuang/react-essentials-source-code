@@ -18740,26 +18740,16 @@ if (process.env.NODE_ENV !== 'production') {
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-var listOfItems = React.createElement(
-					'ul',
-					{ className: 'list-of-items' },
-					React.createElement(
-										'li',
-										{ className: 'item-1' },
-										'Item 1'
-					),
-					React.createElement(
-										'li',
-										{ className: 'item-2' },
-										'Item 2'
-					),
-					React.createElement(
-										'li',
-										{ className: 'item-3' },
-										'Item 3'
-					)
-);
+var ReactClass = React.createClass({
+	displayName: 'ReactClass',
 
-ReactDOM.render(listOfItems, document.getElementById('react-application'));
+	render: function () {
+		return React.createElement('h1', { className: 'header' }, 'React Component');
+	}
+});
+
+var reactComponentElement = React.createElement(ReactClass);
+
+ReactDOM.render(reactComponentElement, document.getElementById('react-application'));
 
 },{"react":155,"react-dom":28}]},{},[156]);
