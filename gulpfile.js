@@ -50,7 +50,8 @@ gulp.task('styles', function () {
 
 // Scripts
 gulp.task('scripts', function () {
-  return gulp.src('src/scripts/**/*.js')
+  // Using "!folder" to exclude the folder from src
+  return gulp.src(['src/scripts/**/*.js', '!src/scripts/**/*-test.js'])
     .pipe(through2.obj(function (file, enc, next) {
       browserify(file.path)
         .transform(babelify, { presets: ['react'] })
