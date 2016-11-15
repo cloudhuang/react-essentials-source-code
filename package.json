@@ -4,7 +4,7 @@
   "description": "The practice demo project to learn React framework",
   "main": "app.js",
   "scripts": {
-    "test": ""
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "gulp-ruby-sass": "^2.1.1",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1",
+    "jest-cli": "^17.0.2",
     "jshint": "^2.9.4",
     "node-glob": "^1.2.0",
     "tiny-lr": "^1.0.3",
