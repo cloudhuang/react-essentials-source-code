@@ -36,7 +36,7 @@ var Application = React.createClass({
     render: function () {
         return (
             <div className="container-fluid">
-                <div className="row">
+                <div className="row" styles='board: 1px solid #ccc'>
                     <div className="col-md-4 text-center">
                         <Stream onAddTweetToCollection={this.addTweetToCollection} />
                     </div>

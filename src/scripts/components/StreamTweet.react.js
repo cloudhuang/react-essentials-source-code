@@ -49,8 +49,8 @@ var StreamTweet = React.createClass({
         window.reacttweet.headerHtml = componentDOMRepresentation.children[0].outerHTML;
         window.reacttweet.tweetHtml = componentDOMRepresentation.children[1].outerHTML;
     },
-
-    componentWillReveiveProps: function (nextProps) {
+    
+    componentWillReceiveProps: function (nextProps) {
         console.log('StreamTweet: 4. Running componentWillReveiveProps()');
 
         var currentTweetLength = this.props.tweet.text.length;

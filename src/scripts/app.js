@@ -1,6 +1,3 @@
-var React = require('react')
-var ReactDOM = require('react-dom')
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Application = require('./components/Application.react');

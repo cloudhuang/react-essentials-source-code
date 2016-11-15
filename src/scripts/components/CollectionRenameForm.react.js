@@ -4,7 +4,7 @@ var Header = require('./Header.react');
 var Button = require('./Button.react');
 
 var inputStyle = {
-    marginRight: '5px'
+    margin: '0 5px 0 0'
 }
 
 var CollectionRenameForm = React.createClass({
@@ -28,7 +28,7 @@ var CollectionRenameForm = React.createClass({
     handleFormSubmit: function (event) {
         event.preventDefault();
         var collectionName = this.state.inputValue;
-        this.props.onChangeCollectionName();
+        this.props.onChangeCollectionName(collectionName);
     },
 
     handleFormCancel: function (event) {
@@ -48,7 +48,7 @@ var CollectionRenameForm = React.createClass({
                 <Header text='Collection Name' />
                 <div className='form-group'>
                     <input className='form-control'
-                        style='{inputStyle}'
+                        styles='{inputStyle}'
                         onChange={this.handleInputValueChange}
                         value={this.state.inputValue}
                         ref='collectionName' />

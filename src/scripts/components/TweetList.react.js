@@ -33,7 +33,7 @@ var TweetList = React.createClass({
     },
 
     render: function () {
-        var tweetElement = this.getListOfTweetIds.map(this.getListOfTweetIds);
+        var tweetElement = this.getListOfTweetIds().map(this.getListOfTweetIds);
 
         return (
             <ul style={listStyle}>

@@ -6,7 +6,7 @@ var Header = require('./Header.react');
 
 var Collection = React.createClass({
     createHtmlMarkupStringOfTweetList: function () {
-        var htmlString = ReactDOMServer.renderToStringMarkup(
+        var htmlString = ReactDOMServer.renderToStaticMarkup(
             <TweetList tweets={this.props.tweets} />
         );
 
