@@ -17,7 +17,7 @@ function initializeStreamOfTweets() {
             };
 
             TweetActionCreators.receiveTweet(tweet);
-        }, 1000 * 10);
+        }, 1000 * 1);
 }
 
 module.exports = {

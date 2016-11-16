@@ -19,9 +19,9 @@ var CollectionControls = React.createClass({
         var name = CollectionStore.getCollectionName();
 
         if (numberOfTweetsInCollection === 1) {
-            text = text + ' tweet in your.';
+            text = text + ' tweet in your';
         } else {
-            text = text + ' tweets in your.';
+            text = text + ' tweets in your';
         }
 
         return (
